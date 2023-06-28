@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+ --gunmetal: #1C232B;
+ --aurometal-saurus: #6C7289;
+ --deep-aquamarine: #3D8168;
+ --deep-aquamarine-hover: #1A4032;
+ --pure-white: #FFF;
+ --cream-bg: #F2EAE2;
+}
+
+body{
+  background: var(--cream-bg);
+}
+
+.container{
+  background-color: var(--pure-white);
+  border-radius: 10px; 
+  width: 600px;
+  height: 450px;
+  display: flex;
+  margin: 10% auto;
+  
+}
+
+.img-container{
+  background-image: url(/corrigido/images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  border-radius: 10px 0px 0px 10px; 
+}
+.description{
+ padding-left: 32px;
+ width: 300px;
+}
+
+.text-descriptipon{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  color: var(--aurometal-saurus);
+}
+.text-descriptipon h1{
+  padding-bottom: 24px;
+  width: 236px;
+  color: var(--gunmetal);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  font-family: 'Fraunces', serif;
+}
+
+.text-descriptipon h3{
+  padding: 32px 0px 20px 0px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.text-descriptipon p{
+  padding-bottom: 29px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.value{
+  padding-bottom: 30px;
+  display: flex;
+  grid-gap: 19px;
+}
+
+.onSale{
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--deep-aquamarine)
+}
+
+.original-value{
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  text-decoration-line: line-through;
+}
+
+button{
+  width: 236px;
+  height: 48px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: var(--deep-aquamarine);
+  color: var(--pure-white);
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+}
+ button:hover{
+  background-color: var(--deep-aquamarine-hover);
+  cursor:pointer;
+ }
+
+ @media (max-width:768px){
+  .container{
+    width: 343px;
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-shrink: 0;
+  }
+  .img-container{
+    width: 343px;
+    height: 458px;
+    background: url(/corrigido/images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border-radius: 10px 0px 0px 10px; 
+  }
+}
+
